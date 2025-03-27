@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 # Token de acceso a Hugging Face (se recomienda usar variables de entorno en producción)
-HF_TOKEN = "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"
+HF_TOKEN = os.getenv("HF_TOKEN")
 
 # Función para descargar archivos desde Hugging Face (privados)
 def descargar_archivo_hf(repo_id, filename, save_path):
